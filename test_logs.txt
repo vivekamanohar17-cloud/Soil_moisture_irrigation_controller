@@ -1,0 +1,178 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1156
+load:0x40078000,len:11456
+ho 0 tail 12 room 4
+load:0x40080400,len:2972
+entry 0x400805dc
+============================================================
+ SOIL MOISTURE IRRIGATION CONTROLLER - SIH 2026
+ Running automatic 5-case test suite (Task 4)...
+============================================================
+
+===== CASE 1 - NORMAL =====
+[SAMPLE] CASE 1 - NORMAL | raw_soil=55 raw_temp=27 smoothed_soil=55 consec_low=0 pump=OFF
+[PUBLISH] {"ts_ms":827,"soil":55,"temp":27,"alert":false}
+[SAMPLE] CASE 1 - NORMAL | raw_soil=54 raw_temp=27 smoothed_soil=54 consec_low=0 pump=OFF
+[PUBLISH] {"ts_ms":977,"soil":54,"temp":27,"alert":false}
+[SAMPLE] CASE 1 - NORMAL | raw_soil=56 raw_temp=27 smoothed_soil=55 consec_low=0 pump=OFF
+[PUBLISH] {"ts_ms":1127,"soil":55,"temp":27,"alert":false}
+[SAMPLE] CASE 1 - NORMAL | raw_soil=55 raw_temp=27 smoothed_soil=55 consec_low=0 pump=OFF
+[PUBLISH] {"ts_ms":1277,"soil":55,"temp":27,"alert":false}
+[SAMPLE] CASE 1 - NORMAL | raw_soil=53 raw_temp=27 smoothed_soil=54 consec_low=0 pump=OFF
+[PUBLISH] {"ts_ms":1427,"soil":54,"temp":27,"alert":false}
+[SAMPLE] CASE 1 - NORMAL | raw_soil=54 raw_temp=27 smoothed_soil=54 consec_low=0 pump=OFF
+[PUBLISH] {"ts_ms":1577,"soil":54,"temp":27,"alert":false}
+[SAMPLE] CASE 1 - NORMAL | raw_soil=56 raw_temp=27 smoothed_soil=54 consec_low=0 pump=OFF
+[PUBLISH] {"ts_ms":1727,"soil":54,"temp":27,"alert":false}
+[SAMPLE] CASE 1 - NORMAL | raw_soil=57 raw_temp=27 smoothed_soil=55 consec_low=0 pump=OFF
+[PUBLISH] {"ts_ms":1877,"soil":55,"temp":27,"alert":false}
+[SAMPLE] CASE 1 - NORMAL | raw_soil=55 raw_temp=27 smoothed_soil=55 consec_low=0 pump=OFF
+[PUBLISH] {"ts_ms":2027,"soil":55,"temp":27,"alert":false}
+[SAMPLE] CASE 1 - NORMAL | raw_soil=54 raw_temp=27 smoothed_soil=55 consec_low=0 pump=OFF
+[PUBLISH] {"ts_ms":2177,"soil":55,"temp":27,"alert":false}
+[SAMPLE] CASE 1 - NORMAL | raw_soil=53 raw_temp=27 smoothed_soil=55 consec_low=0 pump=OFF
+[PUBLISH] {"ts_ms":2327,"soil":55,"temp":27,"alert":false}
+[SAMPLE] CASE 1 - NORMAL | raw_soil=55 raw_temp=27 smoothed_soil=54 consec_low=0 pump=OFF
+[PUBLISH] {"ts_ms":2477,"soil":54,"temp":27,"alert":false}
+
+===== CASE 2 - GENUINE EXCURSION =====
+[SAMPLE] CASE 2 - GENUINE EXCURSION | raw_soil=50 raw_temp=27 smoothed_soil=50 consec_low=0 pump=OFF
+[PUBLISH] {"ts_ms":2627,"soil":50,"temp":27,"alert":false}
+[SAMPLE] CASE 2 - GENUINE EXCURSION | raw_soil=45 raw_temp=27 smoothed_soil=47 consec_low=0 pump=OFF
+[PUBLISH] {"ts_ms":2777,"soil":47,"temp":27,"alert":false}
+[SAMPLE] CASE 2 - GENUINE EXCURSION | raw_soil=38 raw_temp=27 smoothed_soil=44 consec_low=0 pump=OFF
+[PUBLISH] {"ts_ms":2927,"soil":44,"temp":27,"alert":false}
+[SAMPLE] CASE 2 - GENUINE EXCURSION | raw_soil=25 raw_temp=27 smoothed_soil=39 consec_low=0 pump=OFF
+[PUBLISH] {"ts_ms":3077,"soil":39,"temp":27,"alert":false}
+[SAMPLE] CASE 2 - GENUINE EXCURSION | raw_soil=22 raw_temp=27 smoothed_soil=36 consec_low=0 pump=OFF
+[PUBLISH] {"ts_ms":3227,"soil":36,"temp":27,"alert":false}
+[SAMPLE] CASE 2 - GENUINE EXCURSION | raw_soil=20 raw_temp=27 smoothed_soil=30 consec_low=0 pump=OFF
+[PUBLISH] {"ts_ms":3377,"soil":30,"temp":27,"alert":false}
+[SAMPLE] CASE 2 - GENUINE EXCURSION | raw_soil=19 raw_temp=27 smoothed_soil=24 consec_low=1 pump=OFF
+[PUBLISH] {"ts_ms":3527,"soil":24,"temp":27,"alert":false}
+[SAMPLE] CASE 2 - GENUINE EXCURSION | raw_soil=18 raw_temp=27 smoothed_soil=20 consec_low=2 pump=OFF
+[PUBLISH] {"ts_ms":3677,"soil":20,"temp":27,"alert":false}
+[SAMPLE] CASE 2 - GENUINE EXCURSION | raw_soil=17 raw_temp=27 smoothed_soil=19 consec_low=3 pump=ON
+[PUBLISH] {"ts_ms":3827,"soil":19,"temp":27,"alert":true}
+[SAMPLE] CASE 2 - GENUINE EXCURSION | raw_soil=16 raw_temp=27 smoothed_soil=18 consec_low=4 pump=ON
+[PUBLISH] {"ts_ms":3977,"soil":18,"temp":27,"alert":true}
+[SAMPLE] CASE 2 - GENUINE EXCURSION | raw_soil=15 raw_temp=27 smoothed_soil=17 consec_low=5 pump=ON
+[PUBLISH] {"ts_ms":4127,"soil":17,"temp":27,"alert":true}
+[SAMPLE] CASE 2 - GENUINE EXCURSION | raw_soil=14 raw_temp=27 smoothed_soil=16 consec_low=6 pump=ON
+[PUBLISH] {"ts_ms":4277,"soil":16,"temp":27,"alert":true}
+
+===== CASE 3 - NOISY (spikes + implausible) =====
+[SAMPLE] CASE 3 - NOISY (spikes + implausible) | raw_soil=55 raw_temp=27 smoothed_soil=55 consec_low=0 pump=OFF
+[PUBLISH] {"ts_ms":4427,"soil":55,"temp":27,"alert":false}
+[SAMPLE] CASE 3 - NOISY (spikes + implausible) | raw_soil=54 raw_temp=27 smoothed_soil=54 consec_low=0 pump=OFF
+[PUBLISH] {"ts_ms":4577,"soil":54,"temp":27,"alert":false}
+[SAMPLE] CASE 3 - NOISY (spikes + implausible) | raw_soil=200 raw_temp=27 -> FAULT (OUT_OF_PLAUSIBLE_RANGE) - reading discarded, pump forced OFF
+[PUBLISH] {"ts_ms":4727,"soil":200,"temp":27,"alert":false}
+[SAMPLE] CASE 3 - NOISY (spikes + implausible) | raw_soil=56 raw_temp=27 -> sensor recovered, resuming normal operation
+ smoothed_soil=55 consec_low=0 pump=OFF
+[PUBLISH] {"ts_ms":4877,"soil":55,"temp":27,"alert":false}
+[SAMPLE] CASE 3 - NOISY (spikes + implausible) | raw_soil=55 raw_temp=27 smoothed_soil=55 consec_low=0 pump=OFF
+[PUBLISH] {"ts_ms":5027,"soil":55,"temp":27,"alert":false}
+[SAMPLE] CASE 3 - NOISY (spikes + implausible) | raw_soil=-5 raw_temp=27 -> FAULT (OUT_OF_PLAUSIBLE_RANGE) - reading discarded, pump forced OFF
+[PUBLISH] {"ts_ms":5177,"soil":-5,"temp":27,"alert":false}
+[SAMPLE] CASE 3 - NOISY (spikes + implausible) | raw_soil=54 raw_temp=27 -> sensor recovered, resuming normal operation
+ smoothed_soil=54 consec_low=0 pump=OFF
+[PUBLISH] {"ts_ms":5327,"soil":54,"temp":27,"alert":false}
+[SAMPLE] CASE 3 - NOISY (spikes + implausible) | raw_soil=53 raw_temp=27 smoothed_soil=54 consec_low=0 pump=OFF
+[PUBLISH] {"ts_ms":5477,"soil":54,"temp":27,"alert":false}
+[SAMPLE] CASE 3 - NOISY (spikes + implausible) | raw_soil=150 raw_temp=27 -> FAULT (OUT_OF_PLAUSIBLE_RANGE) - reading discarded, pump forced OFF
+[PUBLISH] {"ts_ms":5627,"soil":150,"temp":27,"alert":false}
+[SAMPLE] CASE 3 - NOISY (spikes + implausible) | raw_soil=55 raw_temp=27 -> sensor recovered, resuming normal operation
+ smoothed_soil=54 consec_low=0 pump=OFF
+[PUBLISH] {"ts_ms":5777,"soil":54,"temp":27,"alert":false}
+[SAMPLE] CASE 3 - NOISY (spikes + implausible) | raw_soil=54 raw_temp=27 smoothed_soil=54 consec_low=0 pump=OFF
+[PUBLISH] {"ts_ms":5927,"soil":54,"temp":27,"alert":false}
+[SAMPLE] CASE 3 - NOISY (spikes + implausible) | raw_soil=56 raw_temp=27 smoothed_soil=54 consec_low=0 pump=OFF
+[PUBLISH] {"ts_ms":6077,"soil":54,"temp":27,"alert":false}
+
+===== CASE 4 - STUCK SENSOR =====
+[SAMPLE] CASE 4 - STUCK SENSOR | raw_soil=50 raw_temp=27 smoothed_soil=50 consec_low=0 pump=OFF
+[PUBLISH] {"ts_ms":6227,"soil":50,"temp":27,"alert":false}
+[SAMPLE] CASE 4 - STUCK SENSOR | raw_soil=48 raw_temp=27 smoothed_soil=49 consec_low=0 pump=OFF
+[PUBLISH] {"ts_ms":6377,"soil":49,"temp":27,"alert":false}
+[SAMPLE] CASE 4 - STUCK SENSOR | raw_soil=47 raw_temp=27 smoothed_soil=48 consec_low=0 pump=OFF
+[PUBLISH] {"ts_ms":6527,"soil":48,"temp":27,"alert":false}
+[SAMPLE] CASE 4 - STUCK SENSOR | raw_soil=47 raw_temp=27 smoothed_soil=48 consec_low=0 pump=OFF
+[PUBLISH] {"ts_ms":6677,"soil":48,"temp":27,"alert":false}
+[SAMPLE] CASE 4 - STUCK SENSOR | raw_soil=47 raw_temp=27 smoothed_soil=47 consec_low=0 pump=OFF
+[PUBLISH] {"ts_ms":6827,"soil":47,"temp":27,"alert":false}
+[SAMPLE] CASE 4 - STUCK SENSOR | raw_soil=47 raw_temp=27 smoothed_soil=47 consec_low=0 pump=OFF
+[PUBLISH] {"ts_ms":6977,"soil":47,"temp":27,"alert":false}
+[SAMPLE] CASE 4 - STUCK SENSOR | raw_soil=47 raw_temp=27 -> FAULT (STUCK_VALUE) - reading discarded, pump forced OFF
+[PUBLISH] {"ts_ms":7127,"soil":47,"temp":27,"alert":false}
+[SAMPLE] CASE 4 - STUCK SENSOR | raw_soil=47 raw_temp=27 -> FAULT (STUCK_VALUE) - reading discarded, pump forced OFF
+[PUBLISH] {"ts_ms":7277,"soil":47,"temp":27,"alert":false}
+[SAMPLE] CASE 4 - STUCK SENSOR | raw_soil=47 raw_temp=27 -> FAULT (STUCK_VALUE) - reading discarded, pump forced OFF
+[PUBLISH] {"ts_ms":7427,"soil":47,"temp":27,"alert":false}
+[SAMPLE] CASE 4 - STUCK SENSOR | raw_soil=47 raw_temp=27 -> FAULT (STUCK_VALUE) - reading discarded, pump forced OFF
+[PUBLISH] {"ts_ms":7577,"soil":47,"temp":27,"alert":false}
+[SAMPLE] CASE 4 - STUCK SENSOR | raw_soil=47 raw_temp=27 -> FAULT (STUCK_VALUE) - reading discarded, pump forced OFF
+[PUBLISH] {"ts_ms":7727,"soil":47,"temp":27,"alert":false}
+[SAMPLE] CASE 4 - STUCK SENSOR | raw_soil=47 raw_temp=27 -> FAULT (STUCK_VALUE) - reading discarded, pump forced OFF
+[PUBLISH] {"ts_ms":7877,"soil":47,"temp":27,"alert":false}
+
+===== CASE 5 - NETWORK OUTAGE THEN RECONNECT =====
+[NETWORK] forced OFFLINE for this case
+[SAMPLE] CASE 5 - NETWORK OUTAGE THEN RECONNECT | raw_soil=60 raw_temp=27 -> sensor recovered, resuming normal operation
+ smoothed_soil=60 consec_low=0 pump=OFF
+[SAMPLE] CASE 5 - NETWORK OUTAGE THEN RECONNECT | raw_soil=59 raw_temp=27 smoothed_soil=59 consec_low=0 pump=OFF
+[SAMPLE] CASE 5 - NETWORK OUTAGE THEN RECONNECT | raw_soil=58 raw_temp=27 smoothed_soil=59 consec_low=0 pump=OFF
+[SAMPLE] CASE 5 - NETWORK OUTAGE THEN RECONNECT | raw_soil=58 raw_temp=27 smoothed_soil=58 consec_low=0 pump=OFF
+[SAMPLE] CASE 5 - NETWORK OUTAGE THEN RECONNECT | raw_soil=57 raw_temp=27 smoothed_soil=58 consec_low=0 pump=OFF
+[SAMPLE] CASE 5 - NETWORK OUTAGE THEN RECONNECT | raw_soil=58 raw_temp=27 smoothed_soil=58 consec_low=0 pump=OFF
+[NETWORK] reconnected -> flushing buffer oldest-first
+[SAMPLE] CASE 5 - NETWORK OUTAGE THEN RECONNECT | raw_soil=59 raw_temp=27 smoothed_soil=58 consec_low=0 pump=OFF
+[PUBLISH] {"ts_ms":8027,"soil":60,"temp":27,"alert":false}
+[PUBLISH] {"ts_ms":8177,"soil":59,"temp":27,"alert":false}
+[PUBLISH] {"ts_ms":8327,"soil":59,"temp":27,"alert":false}
+[PUBLISH] {"ts_ms":8477,"soil":58,"temp":27,"alert":false}
+[PUBLISH] {"ts_ms":8627,"soil":58,"temp":27,"alert":false}
+[PUBLISH] {"ts_ms":8777,"soil":58,"temp":27,"alert":false}
+[PUBLISH] {"ts_ms":8927,"soil":58,"temp":27,"alert":false}
+[SAMPLE] CASE 5 - NETWORK OUTAGE THEN RECONNECT | raw_soil=60 raw_temp=27 smoothed_soil=58 consec_low=0 pump=OFF
+[PUBLISH] {"ts_ms":9077,"soil":58,"temp":27,"alert":false}
+[SAMPLE] CASE 5 - NETWORK OUTAGE THEN RECONNECT | raw_soil=59 raw_temp=27 smoothed_soil=58 consec_low=0 pump=OFF
+[PUBLISH] {"ts_ms":9227,"soil":58,"temp":27,"alert":false}
+[SAMPLE] CASE 5 - NETWORK OUTAGE THEN RECONNECT | raw_soil=58 raw_temp=27 smoothed_soil=58 consec_low=0 pump=OFF
+[PUBLISH] {"ts_ms":9377,"soil":58,"temp":27,"alert":false}
+[SAMPLE] CASE 5 - NETWORK OUTAGE THEN RECONNECT | raw_soil=57 raw_temp=27 smoothed_soil=58 consec_low=0 pump=OFF
+[PUBLISH] {"ts_ms":9527,"soil":58,"temp":27,"alert":false}
+[SAMPLE] CASE 5 - NETWORK OUTAGE THEN RECONNECT | raw_soil=58 raw_temp=27 smoothed_soil=58 consec_low=0 pump=OFF
+[PUBLISH] {"ts_ms":9677,"soil":58,"temp":27,"alert":false}
+
+===== TEST SUITE COMPLETE - switching to LIVE mode =====
+Turn the Soil Moisture potentiometer and press the
+NETWORK button to explore live behaviour.
+
+[SAMPLE] LIVE | raw_soil=49 raw_temp=-3 smoothed_soil=49 consec_low=0 pump=OFF
+[PUBLISH] {"ts_ms":11827,"soil":49,"temp":-3,"alert":false}
+[SAMPLE] LIVE | raw_soil=47 raw_temp=0 smoothed_soil=48 consec_low=0 pump=OFF
+[PUBLISH] {"ts_ms":13827,"soil":48,"temp":0,"alert":false}
+[SAMPLE] LIVE | raw_soil=43 raw_temp=4 smoothed_soil=46 consec_low=0 pump=OFF
+[PUBLISH] {"ts_ms":15827,"soil":46,"temp":4,"alert":false}
+[SAMPLE] LIVE | raw_soil=39 raw_temp=8 smoothed_soil=44 consec_low=0 pump=OFF
+[PUBLISH] {"ts_ms":17827,"soil":44,"temp":8,"alert":false}
+[SAMPLE] LIVE | raw_soil=42 raw_temp=12 smoothed_soil=44 consec_low=0 pump=OFF
+[PUBLISH] {"ts_ms":19827,"soil":44,"temp":12,"alert":false}
+[SAMPLE] LIVE | raw_soil=40 raw_temp=14 smoothed_soil=42 consec_low=0 pump=OFF
+[PUBLISH] {"ts_ms":21827,"soil":42,"temp":14,"alert":false}
+[SAMPLE] LIVE | raw_soil=38 raw_temp=17 smoothed_soil=40 consec_low=0 pump=OFF
+[PUBLISH] {"ts_ms":23827,"soil":40,"temp":17,"alert":false}
+[SAMPLE] LIVE | raw_soil=40 raw_temp=19 smoothed_soil=39 consec_low=0 pump=OFF
+[PUBLISH] {"ts_ms":25827,"soil":39,"temp":19,"alert":false}
+[SAMPLE] LIVE | raw_soil=42 raw_temp=22 smoothed_soil=40 consec_low=0 pump=OFF
+[PUBLISH] {"ts_ms":27827,"soil":40,"temp":22,"alert":false}
+[SAMPLE] LIVE | raw_soil=38 raw_temp=20 smoothed_soil=39 consec_low=0 pump=OFF
+[PUBLISH] {"ts_ms":29827,"soil":39,"temp":20,"alert":false}
+[SAMPLE] LIVE | raw_soil=41 raw_temp=20 smoothed_soil=39 consec_low=0 pump=OFF
+[PUBLISH] {"ts_ms":31827,"soil":39,"temp":20,"alert":false}
